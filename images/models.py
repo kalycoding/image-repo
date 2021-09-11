@@ -22,8 +22,10 @@ class Image(models.Model):
     public_image = models.BooleanField(default=True)
 
     
-
     image_category = models.ForeignKey(
         to=ImageCategory,
         on_delete=models.CASCADE
     )
+
+    def __str__(self) -> str:
+        return self.name
