@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tnui_(t%lh41mfp_n1u4j%y@t_&6sm2dqpwcrhlwv)6784qthp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework.authtoken',
-    
+    'drf_yasg',
     'dj_rest_auth'
 ]
 
@@ -109,7 +109,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ],
+  
 
+}
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 

@@ -23,8 +23,6 @@ class UserRegistrationAndImageCategoryTest(TestCase):
         self.assertEqual('kalyfa', user.username)
         self.assertFalse(user.is_superuser)
 
-    
-        
 
     def test_category_creation(self):
         user = get_user_model().objects.get(pk=1)
