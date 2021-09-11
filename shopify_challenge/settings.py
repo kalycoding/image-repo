@@ -39,7 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #Local App
-    'images'
+    'images',
+
+    #3rd Party Packages
+
+    'rest_framework',
+    'rest_framework.authtoken',
+    
+    'dj_rest_auth'
 ]
 
 MIDDLEWARE = [
