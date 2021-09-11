@@ -6,6 +6,8 @@ from .models import (
 )
 
 class ImageCategorySerializer(serializers.ModelSerializer):
+    user = serializers.ReadOnlyField(source='user.username')
     class Meta:
         model = ImageCategory
         fields = '__all__'
+

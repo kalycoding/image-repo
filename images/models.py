@@ -16,6 +16,14 @@ class ImageCategory(models.Model):
     def __str__(self) -> str:
         return self.name
 
+    def to_json(self):
+        return {
+            'id':self.id,
+            'user':self.user.username,
+            'name':self.name,
+            'description':self.description
+        }
+
 class Image(models.Model):
     name = models.CharField(max_length=250)
     description = models.TextField()
@@ -29,3 +37,5 @@ class Image(models.Model):
 
     def __str__(self) -> str:
         return self.name
+
+    
