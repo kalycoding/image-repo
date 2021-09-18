@@ -11,3 +11,14 @@ class ImageCategorySerializer(serializers.ModelSerializer):
         model = ImageCategory
         fields = '__all__'
 
+
+class ImageUploadSerializer(serializers.ModelSerializer):
+    image_category = serializers.ReadOnlyField(source='image_category.name')
+
+    class Meta:
+        model = Image
+        fields = '__all__'
+
+
+class DeleteBulkImageSerializer(serializers.Serializer):
+    image_id = serializers.ListField(child=serializers.JSONField())

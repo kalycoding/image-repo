@@ -29,7 +29,7 @@ class Image(models.Model):
     description = models.TextField()
     public_image = models.BooleanField(default=True)
 
-    
+    file = models.ImageField(upload_to='images')
     image_category = models.ForeignKey(
         to=ImageCategory,
         on_delete=models.CASCADE

@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 dj-rest-auth = "*"
 drf-yasg = "*"
+pillow = "*"
 
 [dev-packages]
 
