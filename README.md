@@ -18,6 +18,7 @@ This module requires the following modules/libraries:
 
 * [Docker](https://www.docker.com/get-started)
 * Any version of Linux or Unix OS (Recommended and Optional)
+* The database is running on sqlite (for this challenge)
 
 ## Installation
 Make sure Docker and docker-compose is install
