@@ -27,3 +27,5 @@ Make sure Docker and docker-compose is install
 
 2. Run ```http://0.0.0.0:8000/swagger``` to view swagger for the endpoints
 
+
+3. Link to Postman API Documentation ```https://documenter.getpostman.com/view/12693958/UUxtEAh7```
