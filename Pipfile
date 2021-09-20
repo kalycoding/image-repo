@@ -9,6 +9,7 @@ djangorestframework = "*"
 dj-rest-auth = "*"
 drf-yasg = "*"
 pillow = "*"
+django-allauth = "*"
 
 [dev-packages]
 

@@ -1,3 +1,4 @@
+from django.db import models
 from django.db.models import fields
 from rest_framework import serializers
 from .models import (
@@ -22,3 +23,8 @@ class ImageUploadSerializer(serializers.ModelSerializer):
 
 class DeleteBulkImageSerializer(serializers.Serializer):
     image_id = serializers.ListField(child=serializers.JSONField())
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Image
+        fields = '__all__'

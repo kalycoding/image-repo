@@ -12,6 +12,7 @@ import rest_framework
 from .serializers import (
     DeleteBulkImageSerializer,
     ImageCategorySerializer,
+    ImageSerializer,
     ImageUploadSerializer
 )
 from .models import (
@@ -135,3 +136,7 @@ class ImageListView(generics.ListAPIView):
         images = image_cat.image_set.all()
         serializer = ImageUploadSerializer(images, many=True)
         return response.Response(serializer.data, status=200)
+
+class ImageVies(generics.ListAPIView):
+    queryset = Image.objects.all()
+    serializer_class = ImageSerializer

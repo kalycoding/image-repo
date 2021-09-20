@@ -4,7 +4,8 @@ from .views import (
     ImageCategoryViewList,
     ImageCategoryUpdateView,
     ImageListView,
-    DeleteAllImagesInCategory
+    DeleteAllImagesInCategory,
+    ImageVies
 )
 
 urlpatterns = [
