@@ -29,3 +29,5 @@ Make sure Docker and docker-compose is install
 
 
 3. Link to Postman API Documentation ```https://documenter.getpostman.com/view/12693958/UUxtEAh7```
+
+4. To run/execute (add photos endpoint) make sure you are inside the **photos** directory, that's when you are using request libary or curl for testing the endpoint
