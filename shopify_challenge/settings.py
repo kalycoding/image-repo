@@ -153,3 +153,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 SITE_ID = 1
+
+ACCOUNT_EMAIL_REQUIRED = False

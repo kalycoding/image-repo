@@ -49,6 +49,7 @@ class ImageCategoryUpdateView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly, permissions.IsAuthenticated]
 
 class SingleImageUploadView(generics.CreateAPIView):
+    permission_classes = [permissions.IsAuthenticated]
     serializer_class=ImageUploadSerializer
     def post(self, request, pk):
         try:
